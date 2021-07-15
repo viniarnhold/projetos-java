@@ -1,14 +1,15 @@
+package lista2.execondicional;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class exercicio6 {
+public class Exercicio6 {
 
 	public static void main(String[] args) {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
-		
+
 		double x = sc.nextDouble();
-		
+
 		if (x >= 0 && x <= 25) {
 			System.out.println("Intervalo [0,25]");
 		}
@@ -24,7 +25,7 @@ public class exercicio6 {
 		else {
 			System.out.println("Fora de intervalo");
 		}
-	
+
 		sc.close();
 	}
 
