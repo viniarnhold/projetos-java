@@ -1,4 +1,5 @@
 package shp;
+
 import java.util.Scanner;
 
 public class SuperHeroesProgram {
@@ -15,7 +16,7 @@ public class SuperHeroesProgram {
 
         menu = sc.nextInt();
 
-        if (menu==1) {
+        if (menu == 1) {
             System.out.println("Código do Herói:");
             codheroi = sc.nextInt();
             System.out.println("Nome do Herói:");
@@ -26,11 +27,10 @@ public class SuperHeroesProgram {
             System.out.println("Herói cadastrado com sucesso!");
             System.out.println("Heroi " + codheroi + " - " + nome + " com " + coeffor + " força");
 
-        }
-        else{
+        } else {
 
         }
-        
+
         sc.close();
 
     }
