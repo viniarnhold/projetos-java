@@ -1,21 +1,22 @@
+package lista2.execondicional;
 import java.util.Scanner;
 
-public class exercicio3 {
+public class Exercicio3 {
 
 	public static void main(String[] args) {
-		
+
 		Scanner sc = new Scanner(System.in);
-		
+
 		int x, y;
-		
+
 		x = sc.nextInt();
 		y = sc.nextInt();
-		
+
 		if (x % y == 0 || y % x == 0) {
-			System.out.println("São múltiplos");
+			System.out.println("Sï¿½o mï¿½ltiplos");
 		}
 		else {
-			System.out.println("Não são múltiplos");
+			System.out.println("Nï¿½o sï¿½o mï¿½ltiplos");
 		}
 		sc.close();
 	}

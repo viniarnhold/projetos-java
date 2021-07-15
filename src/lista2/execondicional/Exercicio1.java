@@ -1,22 +1,23 @@
+package lista2.execondicional;
 import java.util.Scanner;
 
-public class exercicio2 {
+public class Exercicio1 {
 
 	public static void main(String[] args) {
-		
+
 		Scanner sc = new Scanner(System.in);
-		
+
 		int x;
-		
+
 		x = sc.nextInt();
-		
-		if (x % 2 == 0) {
-			System.out.println("Par");
+
+		if (x >= 0) {
+			System.out.println("Nï¿½o Negativo");
 		}
 		else {
-			System.out.println("Ímpar");
+			System.out.println("Negativo");
 		}
+
 		sc.close();
 	}
-
 }

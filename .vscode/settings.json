@@ -1,6 +1,5 @@
 {
     "java.project.sourcePaths": [
-        "lista2.exefor",
-        "lista2"
+        "src"
     ]
 }
