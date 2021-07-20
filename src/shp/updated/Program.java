@@ -1,4 +1,5 @@
 package shp.updated;
+
 import java.util.Scanner;
 
 public class Program {
