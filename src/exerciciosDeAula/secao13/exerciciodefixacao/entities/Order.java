@@ -5,31 +5,32 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-import exerciciosDeAula.secao13.exerciciodefixacao.entities.enums.OrderStatus;
+import exerciciosDeAula.secao13.exemplo1.entities.enums.OrderStatus;
 
 public class Order {
 
     public static SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
-    private Date moment;
-    private OrderStatus status;
 
+    private Date date;
+    private OrderStatus status;
+    private Client client;
     private List<OrderItem> itens = new ArrayList<>();
 
-    public Order(){
+    public Order() {
 
     }
-
-    public Order(Date moment, OrderStatus status) {
-        this.moment = moment;
+    public Order(Date date, OrderStatus status, Client client) {
+        this.date = date;
         this.status = status;
+        this.client = client;
     }
 
-    public Date getMoment() {
-        return this.moment;
+    public Date getDate() {
+        return this.date;
     }
 
-    public void setMoment(Date moment) {
-        this.moment = moment;
+    public void setDate(Date date) {
+        this.date = date;
     }
 
     public OrderStatus getStatus() {
@@ -38,6 +39,14 @@ public class Order {
 
     public void setStatus(OrderStatus status) {
         this.status = status;
+    }
+
+    public Client getClient() {
+        return this.client;
+    }
+
+    public void setClient(Client client) {
+        this.client = client;
     }
 
     public List<OrderItem> getItens() {
@@ -49,11 +58,13 @@ public class Order {
     public void removeItem(OrderItem item){
         itens.remove(item);
     }
-    public Double total() {
+    public Double total(){
         Double sum = 0.0;
         for (OrderItem c : itens){
             sum += c.subTotal();
         }
-        return sum
+        return sum;
     }
+
+
 }
